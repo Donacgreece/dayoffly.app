@@ -6,5 +6,5 @@
 .analytics-settings{border:0;background:transparent;text-decoration:underline;text-underline-offset:3px;color:inherit;cursor:pointer;font-size:12px;font-weight:700;margin-left:12px}
 @media(max-width:650px){.analytics-banner{bottom:80px;padding:16px;display:block}.analytics-buttons{margin-top:13px}.analytics-buttons button{flex:1}}
 
-/* Dayoffly footer alignment fix */
-.analytics-settings{display:block;width:max-content;max-width:100%;margin:13px auto 0;padding:7px 14px;border:1px solid #dbe6f5;border-radius:999px;background:#fff;color:#667c9c;cursor:pointer;font:700 11px Manrope,system-ui,sans-serif;line-height:1.5;text-decoration:none;transition:background .15s,color .15s}.analytics-settings:hover{background:#eaf4ff;color:#267bea}.analytics-settings:focus-visible{outline:2px solid #3282f6;outline-offset:2px}
+/* Center footer analytics control on a separate line */
+.analytics-settings{display:block;width:max-content;max-width:100%;margin:13px auto 0;padding:7px 14px;border:1px solid #dbe6f5;border-radius:999px;background:#fff;color:#667c9c;cursor:pointer;font:700 11px Manrope,system-ui,sans-serif;line-height:1.5;text-decoration:none}.analytics-settings:hover{background:#eaf4ff;color:#267bea}

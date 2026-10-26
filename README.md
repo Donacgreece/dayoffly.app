@@ -56,7 +56,7 @@ Then visit `http://localhost:8080`.
 3. Right-click `Publish-Dayoffly.ps1` and run it through PowerShell, or run the following from **any** working directory:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\Path\To\Dayoffly-v0.0.3\Publish-Dayoffly.ps1"
+powershell -ExecutionPolicy Bypass -File "C:\Path\To\Dayoffly-v0.0.5\Publish-Dayoffly.ps1"
 ```
 
 The script clones the repository into a temporary folder, copies release files, creates a commit, and pushes to `main`. It does not require a `.git` folder next to the ZIP. It will never force-push. GitHub Pages can then deploy the new commit automatically using `.github/workflows/pages.yml`.
@@ -78,7 +78,7 @@ The social banner is located at `assets/dayoffly-social.jpg`. The Open Graph tag
 
 ## 📦 Release history
 
-- **v0.0.3**: Portable Windows publishing, GitHub footer button, social preview metadata and image, polished README.
+- **v0.0.5**: Portable Windows publishing, GitHub footer button, social preview metadata and image, polished README.
 - **v0.0.2**: Reduced layout movement when switching languages or navigating to short pages; scrollbar stability improvements.
 - **v0.0.1**: Initial bilingual holiday planner, leave suggestions, saved plans, and PWA foundation.
 
@@ -96,13 +96,16 @@ Issues and improvement ideas are welcome. Please open a [GitHub issue](https://g
 
 <div align="center"><sub>Made to help you make more of your days. ☀️</sub></div>
 
-## Privacy-first analytics
+## v0.0.5: Regions and privacy-first analytics
 
-Dayoffly uses optional Google Analytics 4 (G-V26YX470D6).
-The GA4 tag is **not loaded before users accept analytics**.
-Users can reject, accept, or revisit their choice through **Analytics settings** in the footer.
-Consent preference is stored locally in the browser. No leave dates, saved plans, names, or other personal information are included in custom events.
+- Region search in Greek and English, with over 50 Greek locations.
+- Selected local patron-saint celebrations appear as **informational observances**. These are not assumed to be legally mandated paid holidays for every employee.
+- Google Analytics 4 ID `G-V26YX470D6`, loaded only after opt-in consent.
+- Consent can be changed via the footer button. Custom analytics events never include user plan dates.
+- Consistent footer alignment, social preview and responsive navigation.
 
-Events: screen_navigation, language_switch, leave_optimizer_run, leave_plan_save, calendar_export, plan_share, manual_plan_create.
+> The holiday dataset is informational and not a verified nationwide registry of employment holidays. Always check local and employer-specific applicability.
 
-Note: Google Analytics is a third-party service. Before launch, review the privacy notice, cookie/consent obligations for target markets, and analytics settings in Google Analytics.
+## Deployment
+
+Run the included `Publish-Dayoffly.ps1` from any working directory. The script uses its own folder as the local source, clones your repository to a temporary directory and publishes the updated site. Requires Git and GitHub authentication.
