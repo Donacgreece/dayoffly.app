@@ -32,7 +32,7 @@ try {
         $diffStatus = $LASTEXITCODE
         if ($diffStatus -eq 0) { Write-Host 'The repository is already up to date.' -ForegroundColor Green; return }
         if ($diffStatus -ne 1) { throw 'Unable to compare staged changes.' }
-        & git -c user.name='Dayoffly Release' -c user.email='dayoffly-release@users.noreply.github.com' commit -m 'Release Dayoffly v0.0.3: social preview, README and portable deployment'
+        & git -c user.name='Dayoffly Release' -c user.email='dayoffly-release@users.noreply.github.com' commit -m 'docs: add MIT license to Dayoffly v0.0.3'
         if ($LASTEXITCODE -ne 0) { throw 'Git commit failed.' }
         & git push origin main
         if ($LASTEXITCODE -ne 0) { throw 'Git push failed. Confirm GitHub authentication or retry after remote updates.' }

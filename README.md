@@ -6,6 +6,8 @@
 
 **Make more of your days.**
 
+![License: MIT](https://img.shields.io/badge/License-MIT-34D399?style=flat-square)
+
 A playful, bilingual, mobile-first holiday calendar and smart leave planner.
 
 [**🌐 Open the app**](https://donacgreece.github.io/dayoffly.app/) · [**🐛 Report a problem**](https://github.com/Donacgreece/dayoffly.app/issues)
@@ -79,6 +81,12 @@ The social banner is located at `assets/dayoffly-social.jpg`. The Open Graph tag
 - **v0.0.3**: Portable Windows publishing, GitHub footer button, social preview metadata and image, polished README.
 - **v0.0.2**: Reduced layout movement when switching languages or navigating to short pages; scrollbar stability improvements.
 - **v0.0.1**: Initial bilingual holiday planner, leave suggestions, saved plans, and PWA foundation.
+
+## 📄 License
+
+Dayoffly is open source and distributed under the **MIT License**. You can use, modify, redistribute, and build upon the software, including for commercial purposes, provided you retain the original copyright and license notice. See [LICENSE](LICENSE) for the full terms.
+
+Copyright © 2026 Dimitris Galatsanos.
 
 ## 🤝 Contributing
 
