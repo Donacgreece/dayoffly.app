@@ -69,7 +69,7 @@
 
   function addPrivacyControl() {
     if(document.getElementById('dayoffly-analytics-settings')) return;
-    const footer=document.querySelector('.footer-main') || document.querySelector('.footer');
+    const footer=document.querySelector('.footer .shell');
     if(!footer) return;
     const btn=document.createElement('button');
     btn.type='button';btn.id='dayoffly-analytics-settings';btn.className='analytics-settings';
