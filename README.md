@@ -95,3 +95,14 @@ Issues and improvement ideas are welcome. Please open a [GitHub issue](https://g
 ---
 
 <div align="center"><sub>Made to help you make more of your days. ☀️</sub></div>
+
+## Privacy-first analytics
+
+Dayoffly uses optional Google Analytics 4 (G-V26YX470D6).
+The GA4 tag is **not loaded before users accept analytics**.
+Users can reject, accept, or revisit their choice through **Analytics settings** in the footer.
+Consent preference is stored locally in the browser. No leave dates, saved plans, names, or other personal information are included in custom events.
+
+Events: screen_navigation, language_switch, leave_optimizer_run, leave_plan_save, calendar_export, plan_share, manual_plan_create.
+
+Note: Google Analytics is a third-party service. Before launch, review the privacy notice, cookie/consent obligations for target markets, and analytics settings in Google Analytics.

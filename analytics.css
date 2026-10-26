@@ -1,0 +1,7 @@
+/* Dayoffly v0.0.4 - Analytics preference UI */
+.analytics-banner{position:fixed;z-index:9999;bottom:18px;left:50%;transform:translateX(-50%);width:min(760px,calc(100% - 28px));background:#fff;border:1px solid #dbe8fc;border-radius:20px;padding:20px;box-shadow:0 18px 65px #0f2d5b30;display:flex;align-items:center;gap:22px;color:#0f2d5b;font-family:Manrope,system-ui,sans-serif}
+.analytics-copy{flex:1;min-width:0}.analytics-copy strong{font-size:15px;line-height:1.4}.analytics-copy p{font-size:12px;line-height:1.7;color:#657b99;margin:7px 0 0}
+.analytics-buttons{display:flex;gap:8px;flex-shrink:0}.analytics-buttons button{border-radius:12px;padding:11px 16px;font-weight:800;border:1px solid #dbe6f5;cursor:pointer;font:inherit;font-size:13px;font-weight:800;min-width:92px}
+.analytics-no{background:#f1f6fd;color:#30547f}.analytics-yes{background:#3282f6;color:white;border-color:#3282f6!important}
+.analytics-settings{border:0;background:transparent;text-decoration:underline;text-underline-offset:3px;color:inherit;cursor:pointer;font-size:12px;font-weight:700;margin-left:12px}
+@media(max-width:650px){.analytics-banner{bottom:80px;padding:16px;display:block}.analytics-buttons{margin-top:13px}.analytics-buttons button{flex:1}}
