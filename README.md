@@ -120,8 +120,19 @@ Run the included `Publish-Dayoffly.ps1` from any working directory. The script u
 - Offline files updated for v0.0.7. Clear website data or relaunch app if a stale offline version appears.
 
 
-### v0.0.8 · Mobile interaction refinements
+### v0.0.9 · Mobile interaction refinements
 
 - Requests 1:1 viewport scaling on phones to reduce accidental pinch/double-tap zoom. Browser accessibility overrides are respected.
 - Prevents iOS automatic focus zoom through 16px form-control typography.
 - Preserves ordinary scrolling, text selection and mobile navigation.
+
+
+### Release v0.0.9 | Publisher reliability
+
+- `VERSION` is the single source for release commit messages.
+- The PowerShell publisher runs from any working directory when given its full path.
+- Adds `.gitattributes` to standardize line endings.
+- Checks all critical files and Git exit statuses before reporting success.
+- GitHub Actions deployment results must be checked separately from Git push.
+
+**Publish example:** `powershell -ExecutionPolicy Bypass -File "C:\Users\donac\Downloads\Dayoffly-v0.0.9-FULL\Publish-Dayoffly.ps1"`
