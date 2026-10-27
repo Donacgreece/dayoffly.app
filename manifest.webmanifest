@@ -1,1 +1,33 @@
-{"name":"Dayoffly","short_name":"Dayoffly","description":"Make more of your days","start_url":"./","scope":"./","display":"standalone","background_color":"#F6FAFF","theme_color":"#3B82F6","icons":[{"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "id": "./",
+  "name": "Dayoffly | Smart Holiday & Leave Planner",
+  "short_name": "Dayoffly",
+  "description": "Make more of your days. Greek holidays and smart leave planning.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F7FAFF",
+  "theme_color": "#3B82F6",
+  "lang": "el",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
