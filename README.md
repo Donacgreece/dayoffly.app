@@ -111,10 +111,17 @@ Issues and improvement ideas are welcome. Please open a [GitHub issue](https://g
 Run the included `Publish-Dayoffly.ps1` from any working directory. The script uses its own folder as the local source, clones your repository to a temporary directory and publishes the updated site. Requires Git and GitHub authentication.
 
 
-## v0.0.6: Regional holidays and mobile PWA
+## v0.0.7: Regional holidays and mobile PWA
 
 - Includes Kissamos / Kastelli location with the **12 December Saint Spyridon patronal observance**, per the Diocese of Kissamos and Selino. Source: https://imks.gr/mitropoli/local-celebrations/
 - Patronal celebrations and local observances do **not automatically** mean mandatory days off for all employees. Users can add applicable non-working dates in Settings.
 - The requested 8 December holiday has **not been independently verified** as an official municipality-wide holiday and is therefore not hardcoded as a mandatory day off.
 - Improved mobile safe margins, form usability and 180/192/512 PNG app icons. Standalone PWA support on Android and iOS via Add to Home Screen.
-- Offline files updated for v0.0.6. Clear website data or relaunch app if a stale offline version appears.
+- Offline files updated for v0.0.7. Clear website data or relaunch app if a stale offline version appears.
+
+
+### v0.0.8 · Mobile interaction refinements
+
+- Requests 1:1 viewport scaling on phones to reduce accidental pinch/double-tap zoom. Browser accessibility overrides are respected.
+- Prevents iOS automatic focus zoom through 16px form-control typography.
+- Preserves ordinary scrolling, text selection and mobile navigation.
